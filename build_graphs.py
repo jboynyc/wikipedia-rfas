@@ -35,7 +35,6 @@ for i, d in valid_rfas.groupby(['period', 'url']):
     ps.discard(*d['candidate'])
     for link in combinations(ps, 2):
         edges[period].append(link)
-        #mk_weighted_edge(graphs[period], lu[link[0]], lu[link[1]])
 
 for period, y in PERIODS.items():
     edges_by_ids = list(map(lambda t: tuple(lookups[period][i] for i in t), edges[period]))

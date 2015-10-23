@@ -4,7 +4,6 @@ from bs4 import BeautifulSoup as bs
 from sqlalchemy import create_engine
 
 db = create_engine('sqlite:///wikipedia_rfas.db')
-#YEARS = {'2003', '2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'}
 YEARS = {'2004', '2005', '2006', '2007', '2008', '2009', '2010', '2011', '2012', '2013', '2014'}
 
 
